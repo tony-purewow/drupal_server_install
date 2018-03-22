@@ -1,0 +1,389 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*********************
+VARIABLES
+*********************/
+/*********************
+MIXIN BREAKPOINTS
+*********************/
+/*********************
+MIXINS
+*********************/
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.employeeContainer {
+  display: block;
+  margin: 0 auto;
+  width: 1024px;
+  background-color: #f8f8f8; }
+  .employeeContainer .employeeHeader {
+    color: #0B1720;
+    font-family: "Chronicle Display A", "Chronicle Display B";
+    font-size: 46px;
+    font-weight: 200;
+    line-height: 55px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .employeeContainer .employeeHeader .icon-purewow-logo-wordmark {
+      font-family: "icomoon"; }
+
+@media (max-width: 767px) {
+  .employeeContainer {
+    width: 100%;
+    display: table; }
+    .employeeContainer .employeeHeader:before {
+      border-bottom: 15px solid #000;
+      content: "";
+      display: block;
+      position: relative;
+      margin: 0 auto; }
+    .employeeContainer .employeeHeader .icon-purewow-logo-wordmark:before {
+      top: 10px;
+      position: relative; } }
+
+.employeeTiles {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 930px;
+  margin: 75px auto 0; }
+  .employeeTiles .employeeWrapper {
+    margin: 5px;
+    width: calc(100%/3);
+    max-width: 300px; }
+    .employeeTiles .employeeWrapper:nth-child(3n+1) .employeeData {
+      width: 300%;
+      display: block;
+      margin-left: 0%;
+      padding-right: 6%; }
+    .employeeTiles .employeeWrapper:nth-child(3n+2) .employeeData {
+      width: 300%;
+      display: block;
+      margin-left: -103%;
+      padding-right: 6%; }
+    .employeeTiles .employeeWrapper:nth-child(3n+3) .employeeData {
+      width: 300%;
+      display: block;
+      margin-left: -206.5%;
+      padding-right: 6.5%; }
+  .employeeTiles .employeeImgWrapper {
+    height: 300px;
+    width: 300px; }
+    .employeeTiles .employeeImgWrapper .hide {
+      display: none; }
+    .employeeTiles .employeeImgWrapper .employeeImg {
+      height: 300px;
+      width: 300px;
+      padding-bottom: 12px;
+      filter: none;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      cursor: pointer; }
+      .employeeTiles .employeeImgWrapper .employeeImg:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        cursor: pointer;
+        transition: all .5s; }
+    .employeeTiles .employeeImgWrapper .employeeName {
+      font-family: "FreightDisp Pro";
+      color: #0B1720;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 33px;
+      height: 40px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      position: relative;
+      bottom: 55px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+  .employeeTiles .employeeData {
+    background-color: #fff;
+    height: 242px;
+    width: 912px;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s; }
+    .employeeTiles .employeeData .employeeDataWrapper {
+      padding-left: 25px; }
+    .employeeTiles .employeeData .employeeDataName {
+      color: #0B1720;
+      font-family: "FreightDisp Pro";
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 51px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .employeeTiles .employeeData .employeeDeptTitle {
+      font-family: "brandon grotesque";
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      line-height: 16px;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+      .employeeTiles .employeeData .employeeDeptTitle span {
+        font-weight: 900; }
+    .employeeTiles .employeeData .employeeBio {
+      color: #0B1720;
+      font-family: "freight-text-pro";
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 26px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .employeeTiles .employeeData .employeeEmail {
+      color: #F27676;
+      font-family: "brandon grotesque";
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      line-height: 16px;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+
+@media (max-width: 767px) {
+  .employeeTiles {
+    justify-content: space-between;
+    max-width: 85%; }
+    .employeeTiles .employeeData .employeeDataWrapper {
+      margin-top: 20px; }
+    .employeeTiles .employeeData .employeeDataName {
+      margin-bottom: 5px; }
+    .employeeTiles .employeeData .employeeDeptTitle {
+      margin-bottom: 5px; }
+    .employeeTiles .employeeData .employeeBio {
+      margin-bottom: 5px; }
+    .employeeTiles .employeeWrapper {
+      width: calc(100%/2);
+      max-width: 165px; }
+      .employeeTiles .employeeWrapper:nth-child(odd) .employeeData {
+        width: 200%;
+        display: block;
+        margin-left: 0%;
+        padding-right: 7%; }
+      .employeeTiles .employeeWrapper:nth-child(even) .employeeData {
+        width: 200%;
+        display: block;
+        margin-left: -107%;
+        padding-right: 7%; }
+    .employeeTiles .employeeImgWrapper {
+      height: 165px;
+      width: 165px; }
+      .employeeTiles .employeeImgWrapper .employeeImg {
+        height: 165px;
+        width: 165px; }
+      .employeeTiles .employeeImgWrapper .employeeName {
+        color: #FFFFFF;
+        font-family: "brandon grotesque";
+        font-size: 8px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        line-height: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        bottom: 33px;
+        background-color: rgba(255, 255, 255, 0);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+        .employeeTiles .employeeImgWrapper .employeeName.icon-arrow-right:after {
+          font-family: "icomoon";
+          content: "\E603";
+          font-size: 11px;
+          left: 4px;
+          top: 2px;
+          position: relative; } }
+
+@media (max-width: 375px) {
+  .employeeTiles {
+    max-width: 95%; }
+  .employeeWrapper:nth-child(odd) .employeeData {
+    margin-left: 0%;
+    padding-right: 10%; }
+  .employeeWrapper:nth-child(even) .employeeData {
+    margin-left: -110%;
+    padding-right: 10%; } }
+
+.employeeDataClose {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  position: relative;
+  left: 97%;
+  top: 15px;
+  opacity: .9;
+  transition: all .3s;
+  z-index: 25; }
+  .employeeDataClose .closeIcon {
+    position: relative; }
+    .employeeDataClose .closeIcon:before {
+      content: "\E900";
+      color: #1a1a1b;
+      font-size: 30px; }
+
+@media (max-width: 767px) {
+  .employeeDataClose {
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    position: relative;
+    left: 90%;
+    top: 14px;
+    background-color: #1a1a1b;
+    opacity: .9;
+    border-radius: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    transition: all .3s;
+    z-index: 25;
+    transform: rotate(-90deg); }
+    .employeeDataClose .closeIcon:before {
+      content: "\E636";
+      color: #fff;
+      font-size: 22px;
+      top: 7px;
+      left: 7px;
+      position: relative; } }
+
+.filterDepartment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 135px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0; }
+
+@media (max-width: 767px) {
+  .filterDepartment {
+    width: 100%;
+    top: 210px; } }
+
+.filterDropdown {
+  height: 40px;
+  width: 394px;
+  border: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+  display: flex;
+  color: #0B1720;
+  font-family: "brandon grotesque";
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .filterDropdown:hover {
+    opacity: 0.9;
+    transition: all 0.5s; }
+  .filterDropdown .icon-slideshow-arrow {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .filterDropdown .icon-slideshow-arrow:before {
+      font-size: 15px;
+      position: relative;
+      left: 1px; }
+
+@media (max-width: 767px) {
+  .filterDropdown {
+    width: 340px; } }
+
+.popupDropdown {
+  height: auto;
+  width: 394px;
+  border: 1px solid #e6e6e6;
+  box-shadow: -6px 16px 16px 7px rgba(0, 0, 0, 0.14);
+  background: #fff;
+  cursor: pointer; }
+  .popupDropdown ul {
+    color: #0B1720;
+    font-family: "FreightDisp Pro";
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .popupDropdown ul li {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .popupDropdown ul li:hover {
+        background: #ededed;
+        transition: all 0.5s; }
+
+@media (max-width: 767px) {
+  .popupDropdown {
+    height: auto;
+    width: 340px; }
+    .popupDropdown ul li {
+      padding-top: 5px;
+      padding-bottom: 5px; } }

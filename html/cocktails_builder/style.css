@@ -1,0 +1,147 @@
+h1, h2, h3, h4, h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Mukta Vaani', sans-serif;
+  letter-spacing: 1px;
+  line-height: 2em;
+  text-transform: uppercase;
+  margin: 0px; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px; }
+
+.loginButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; }
+
+.cocktailsHeader, .cocktailsLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 150px; }
+  .cocktailsHeader h1, .cocktailsLogin h1 {
+    font-size: 14px;
+    margin-top: 24px; }
+
+@media only screen and (max-width: 736px) {
+  .cocktailsHeader {
+    justify-content: space-around; }
+    .cocktailsHeader img:nth-of-type(1) {
+      position: relative !important;
+      top: 0px !important;
+      left: 0px !important; }
+    .cocktailsHeader h1 {
+      margin-top: 10px; } }
+
+.cocktailsLogin {
+  height: 286px; }
+
+.cocktailBody {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  width: 100%; }
+  .cocktailBody .formColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .cocktailBody h2 {
+    color: #555555;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    text-transform: none; }
+  .cocktailBody p {
+    height: 20px;
+    width: 168px;
+    opacity: 0.4;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 20px; }
+  @media only screen and (max-width: 736px) {
+    .cocktailBody {
+      flex-direction: column;
+      align-items: center; }
+      .cocktailBody h2 {
+        margin-bottom: 10px; }
+      .cocktailBody .profileButton {
+        width: 100% !important; } }
+
+.canvasInput {
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+  margin: 10px 0px; }
+  .canvasInput label {
+    height: 15px;
+    width: 100%;
+    color: #555555;
+    font-family: "Mukta Vaani";
+    font-size: 11.75px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase; }
+  .canvasInput input[type='text'] {
+    box-sizing: border-box;
+    color: #555555;
+    font-family: Roboto;
+    font-size: 12.5px;
+    line-height: 17px;
+    padding-left: 10px;
+    width: 363px;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    height: 54px; }
+    .canvasInput input[type='text']:focus {
+      border: 1.5px solid #C6C6C8;
+      outline: none; }
+  .canvasInput textarea {
+    box-sizing: border-box;
+    color: #555555;
+    font-family: Roboto;
+    font-size: 12.5px;
+    line-height: 17px;
+    padding-left: 10px;
+    width: 363px;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    height: auto;
+    resize: none;
+    padding-top: 10px; }
+    .canvasInput textarea:focus {
+      border: 1.5px solid #C6C6C8;
+      outline: none; }
+  .canvasInput .canvasSelect {
+    width: 363px !important;
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA; }
+    .canvasInput .canvasSelect.error {
+      border-color: #F58A8A;
+      color: #F58A8A !important; }
+  .canvasInput.error input[type='text'], .canvasInput.error textarea {
+    border-color: #F58A8A; }
+
+.canvasUploader {
+  position: relative; }
+  .canvasUploader label {
+    height: 15px;
+    width: 100%;
+    color: #555555;
+    font-family: "Mukta Vaani";
+    font-size: 11.75px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase; }
