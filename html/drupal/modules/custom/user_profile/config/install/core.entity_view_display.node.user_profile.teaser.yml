@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.user_profile.field_userprofile_email
+    - field.field.node.user_profile.field_userprofile_name
+    - node.type.user_profile
+  module:
+    - user
+id: node.user_profile.teaser
+targetEntityType: node
+bundle: user_profile
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_userprofile_email: true
+  field_userprofile_name: true

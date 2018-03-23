@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cocktail_directions
+    - node.type.cocktail
+id: node.cocktail.field_cocktail_directions
+field_name: field_cocktail_directions
+entity_type: node
+bundle: cocktail
+label: Directions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

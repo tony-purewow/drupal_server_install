@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_userprofile_bio
+    - node.type.user_profile
+id: node.user_profile.field_userprofile_bio
+field_name: field_userprofile_bio
+entity_type: node
+bundle: user_profile
+label: userprofile_bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

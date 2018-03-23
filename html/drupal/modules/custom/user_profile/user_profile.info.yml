@@ -1,0 +1,11 @@
+name: 'User Profile'
+description: 'Provides User Profile content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - entityconnect
+  - field
+  - menu_ui
+  - node
+  - path
+  - user

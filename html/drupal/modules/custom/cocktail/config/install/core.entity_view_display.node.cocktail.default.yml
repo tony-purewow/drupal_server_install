@@ -1,0 +1,232 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cocktail.field_cocktail_category
+    - field.field.node.cocktail.field_cocktail_deleted
+    - field.field.node.cocktail.field_cocktail_difficulty
+    - field.field.node.cocktail.field_cocktail_directions
+    - field.field.node.cocktail.field_cocktail_email_body
+    - field.field.node.cocktail.field_cocktail_email_subject
+    - field.field.node.cocktail.field_cocktail_email_url
+    - field.field.node.cocktail.field_cocktail_influencer_imgurl
+    - field.field.node.cocktail.field_cocktail_influencer_title
+    - field.field.node.cocktail.field_cocktail_influencer_url
+    - field.field.node.cocktail.field_cocktail_ingredients
+    - field.field.node.cocktail.field_cocktail_instagram_embed
+    - field.field.node.cocktail.field_cocktail_liquor
+    - field.field.node.cocktail.field_cocktail_name
+    - field.field.node.cocktail.field_cocktail_pin_share_img_url
+    - field.field.node.cocktail.field_cocktail_pin_share_txt
+    - field.field.node.cocktail.field_cocktail_pin_share_url
+    - field.field.node.cocktail.field_cocktail_publish_date
+    - field.field.node.cocktail.field_cocktail_published
+    - field.field.node.cocktail.field_cocktail_rank
+    - field.field.node.cocktail.field_cocktail_sponsor_logo_url
+    - field.field.node.cocktail.field_cocktail_sponsor_url
+    - field.field.node.cocktail.field_cocktail_unpublish_date
+    - field.field.node.cocktail.field_influencer_name
+    - node.type.cocktail
+  module:
+    - user
+id: node.cocktail.default
+targetEntityType: node
+bundle: cocktail
+mode: default
+content:
+  field_cocktail_category:
+    weight: 125
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_deleted:
+    weight: 126
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_cocktail_difficulty:
+    weight: 124
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_directions:
+    weight: 118
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cocktail_email_body:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cocktail_email_subject:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_email_url:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_influencer_imgurl:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_influencer_title:
+    weight: 116
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_influencer_url:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_ingredients:
+    weight: 119
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cocktail_instagram_embed:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cocktail_liquor:
+    weight: 123
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_pin_share_img_url:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_pin_share_txt:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_pin_share_url:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_publish_date:
+    weight: 128
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_published:
+    weight: 129
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_cocktail_rank:
+    weight: 122
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_sponsor_logo_url:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_sponsor_url:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cocktail_unpublish_date:
+    weight: 127
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_influencer_name:
+    weight: 114
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

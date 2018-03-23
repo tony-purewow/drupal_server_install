@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tag.field_tag_filter_id
+    - node.type.tag
+  module:
+    - user
+id: node.tag.teaser
+targetEntityType: node
+bundle: tag
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_tag_filter_id: true

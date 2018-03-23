@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_userprofile_department
+    - node.type.department
+    - node.type.user_profile
+  content:
+    - 'node:department:85cdd242-bfb3-44fa-b7a1-6014db924ad0'
+  module:
+    - entityconnect
+third_party_settings:
+  entityconnect:
+    buttons:
+      button_add: '1'
+      button_edit: '1'
+    icons:
+      icon_add: '0'
+      icon_edit: '0'
+id: node.user_profile.field_userprofile_department
+field_name: field_userprofile_department
+entity_type: node
+bundle: user_profile
+label: Department
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 85cdd242-bfb3-44fa-b7a1-6014db924ad0
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      department: department
+    sort:
+      field: field_userprofile_name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

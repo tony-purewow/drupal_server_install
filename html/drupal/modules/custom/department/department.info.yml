@@ -1,0 +1,12 @@
+name: Department
+description: 'Provides Department content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - entityconnect
+  - field
+  - menu_ui
+  - node
+  - path
+  - user
+  - views

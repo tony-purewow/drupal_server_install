@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cocktail.field_cocktail_name
+    - node.type.cocktail
+  module:
+    - user
+id: node.cocktail.teaser
+targetEntityType: node
+bundle: cocktail
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_cocktail_name: true

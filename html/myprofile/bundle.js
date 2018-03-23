@@ -8643,7 +8643,7 @@ var profileObject;
 
 var getLogin = function getLogin() {
   return new Promise(function (resolve, reject) {
-    var url = '/currentuser';
+    var url = '/drupal/currentuser?_format=json';
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open("GET", url);
@@ -50949,7 +50949,7 @@ var WhoWOWLogin = function (_Component) {
 		key: 'gotoSignIn',
 		value: function gotoSignIn() {
 			//this.props.loginResponse(true);
-			document.location.href = '/user/login/google/';
+			document.location.href = '/drupal/user/login/google/';
 		}
 	}, {
 		key: 'render',

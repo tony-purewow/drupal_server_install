@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cocktail_pin_share_txt
+    - node.type.cocktail
+id: node.cocktail.field_cocktail_pin_share_txt
+field_name: field_cocktail_pin_share_txt
+entity_type: node
+bundle: cocktail
+label: 'Pinterest Share Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
